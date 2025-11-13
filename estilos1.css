@@ -1,0 +1,75 @@
+/* Estilos Globales para el Contenedor del Mapa */
+.mindmap {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 20px;
+}
+
+/* Estilo para el Título Principal */
+.mindmap-title {
+    font-size: 2.5em;
+    color: #5D3FD3; /* Morado Oscuro */
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 4px solid #5D3FD3;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Estilo para los Nodos de Primer Nivel (Temas Centrales) */
+.mindmap-node-level-1 {
+    list-style: none;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Color para la rama de BIOÉTICA */
+#Bioetica.mindmap-node-level-1 {
+    background-color: #F8D7DA; /* Rojo muy claro */
+    border-left: 8px solid #DC3545; /* Rojo vibrante */
+}
+
+/* Color para la rama de BIOTECNOLOGÍA */
+#Biotecnologia.mindmap-node-level-1 {
+    background-color: #D4EDDA; /* Verde muy claro */
+    border-left: 8px solid #28A745; /* Verde vibrante */
+}
+
+/* Color para la rama de INGENIERÍA GENÉTICA */
+#IngenieriaGenetica.mindmap-node-level-1 {
+    background-color: #CCE5FF; /* Azul muy claro */
+    border-left: 8px solid #007BFF; /* Azul vibrante */
+}
+
+/* Estilo para los Nodos de Segundo Nivel (Subtemas) */
+.mindmap-node-level-2 > h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #CCC;
+}
+
+/* Estilo para los Conceptos Clave (Hojas del Mapa) */
+.concept-list {
+    list-style-type: none; /* Eliminar viñetas por defecto */
+    padding-left: 0;
+}
+
+.concept-list li {
+    font-size: 1em;
+    padding: 5px 0 5px 20px;
+    position: relative;
+}
+
+/* Viñeta personalizada con un punto y un color */
+.concept-list li::before {
+    content: "•";
+    color: #5D3FD3; /* Usa el color principal para las viñetas */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
